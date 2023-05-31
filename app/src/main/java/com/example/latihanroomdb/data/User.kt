@@ -3,6 +3,7 @@ package com.example.latihanroomdb.data
 import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import androidx.versionedparcelable.VersionedParcelize
 import kotlinx.parcelize.Parcelize
 
 

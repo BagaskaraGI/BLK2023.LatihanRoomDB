@@ -34,7 +34,6 @@ class UserListAdapter : RecyclerView.Adapter<UserListAdapter.MyViewHolder>() {
             holder.itemView.findViewById<LinearLayout>(R.id.rowLayout).setBackgroundColor(Color.CYAN)
         }
 
-
         holder.itemView.findViewById<LinearLayout>(R.id.rowLayout).setOnClickListener {
             val action = ListFragmentDirections.actionListFragmentToUpdateFragment(curentItem)
             holder.itemView.findNavController().navigate(action)
