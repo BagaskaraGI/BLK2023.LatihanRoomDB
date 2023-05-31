@@ -34,5 +34,8 @@
         <argument
             android:name="currentUser"
             app:argType="com.example.latihanroomdb.data.User" />
+        <action
+            android:id="@+id/action_updateFragment_to_listFragment"
+            app:destination="@id/listFragment" />
     </fragment>
 </navigation>

@@ -1,5 +1,6 @@
 package com.example.latihanroomdb
 
+import android.graphics.Color
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -28,6 +29,11 @@ class UserListAdapter : RecyclerView.Adapter<UserListAdapter.MyViewHolder>() {
         holder.itemView.findViewById<TextView>(R.id.tvFirstName).text = curentItem.firstName
         holder.itemView.findViewById<TextView>(R.id.tvLastName).text = curentItem.lastName
         holder.itemView.findViewById<TextView>(R.id.tvAge).text = curentItem.age.toString()
+
+        if (position%2==0){
+            holder.itemView.findViewById<LinearLayout>(R.id.rowLayout).setBackgroundColor(Color.CYAN)
+        }
+
 
         holder.itemView.findViewById<LinearLayout>(R.id.rowLayout).setOnClickListener {
             val action = ListFragmentDirections.actionListFragmentToUpdateFragment(curentItem)

@@ -30,6 +30,9 @@ class AddFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentAddBinding.inflate(layoutInflater,container,false)
         mUserViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
+
+
+        //Button
         binding.buttonAdd.setOnClickListener(){
             insertDataToDatabase()
             this.findNavController().navigate(R.id.action_addFragment_to_listFragment)
